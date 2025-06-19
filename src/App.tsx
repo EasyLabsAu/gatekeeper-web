@@ -13,11 +13,7 @@ function App() {
     <>
       {/* Page provides the backdrop and centers the content */}
       <Page>
-        {/* ChatBox provides the fixed-size chat container */}
-        <ChatBox>
-          {/* Chats component renders the list of chat messages */}
-          <Chats />
-        </ChatBox>
+        <ChatBox/>
       </Page>
     </>
   );
