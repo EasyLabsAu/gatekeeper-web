@@ -7,7 +7,7 @@ import Chats from "@/components/chatbox/chats";
 // ChatBox is a layout wrapper for the chat UI
 // It contains a header (Profile), scrollable chat content, and a fixed input area
 function ChatBox() {
-const [chatHistory, setChatHistory] = useState([]);
+const [chatHistory, setChatHistory] = useState<any>([]);
 const [profile, setProfile]= useState(); 
 // include the logic to request information from backend to update the history
 //
