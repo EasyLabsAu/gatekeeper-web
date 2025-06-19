@@ -8,7 +8,9 @@ import Chats from "@/components/chatbox/chats";
 // It contains a header (Profile), scrollable chat content, and a fixed input area
 function ChatBox() {
 const [chatHistory, setChatHistory] = useState([]);
-
+const [profile, setProfile]= useState(); 
+// include the logic to request information from backend to update the history
+//
   return (
     // Container with fixed width and height, vertical layout, rounded border
     <div className="w-[400px] h-[600px] flex flex-col border border-gray-300 rounded-lg overflow-hidden shadow-sm bg-white">

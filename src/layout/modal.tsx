@@ -7,7 +7,7 @@ function Page({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div
-        className="h-screen w-screen bg-white/30 backdrop-blur-md flex flex-col justify-center items-center"
+        className="h-screen w-screen bg-white/30 backdrop-blur-lg flex flex-col justify-center items-center"
       >
         {/* Render any nested content passed as children */}
         {children}

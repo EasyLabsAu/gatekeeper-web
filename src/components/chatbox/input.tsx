@@ -53,6 +53,8 @@ function Input({
       { sender: "user", message, file: files, timestamp: new Date() },
     ]);
 
+    // send the information  to the backend and then take the response ans add it to the history
+
     // Clear the input message and attached files after sending
     setMessage("");
     setFiles([]);
@@ -97,7 +99,15 @@ function Input({
             }
           }}
         />
-
+        {/* Button to send the message */}
+        <Button
+          onClick={postRequest}
+          className="rounded-full bg-purple-500 hover:bg-violet-500"
+          size="icon"
+          title="Send"
+        >
+          <Send className="w-5 h-5 text-white"/>
+        </Button>
         {/* Hidden file input for selecting files */}
         <input
           id="chat-file-upload"
@@ -118,15 +128,6 @@ function Input({
           <Upload className="w-5 h-5 text-white" />
         </Button>
 
-        {/* Button to send the message */}
-        <Button
-          onClick={postRequest}
-          className="rounded-full bg-purple-500 hover:bg-violet-500"
-          size="icon"
-          title="Send"
-        >
-          <Send className="w-5 h-5 text-white" />
-        </Button>
       </div>
     </div>
   );
