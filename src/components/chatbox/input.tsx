@@ -10,18 +10,18 @@ function Input() {
 
   function uploadFile() {
     chatFileInputRef.current?.click(); // triggers the file picker
-  };
+  }
   function upload() {
     // todo: save the file upload into the local state
-  };
+  }
 
   function saveText() {
     // todo: save the text typed into the local state
-  };
+  }
 
   function postRequest() {
     // todo: send a post request of saved information from local state to the backend
-  }; 
+  }
 
   return (
     <div className="w-full flex items-center border gap-4 p-2">
@@ -35,7 +35,8 @@ function Input() {
         {/* Send Button */}
         <Button
           className="rounded-full bg-purple-500 hover:bg-violet-500"
-          size="icon" onClick={postRequest}
+          size="icon"
+          onClick={postRequest}
         >
           <Send className="w-5 h-5 text-white" />
         </Button>
@@ -57,6 +58,6 @@ function Input() {
       </div>
     </div>
   );
-}; 
+}
 
 export default Input;

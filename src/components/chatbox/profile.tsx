@@ -24,7 +24,7 @@ function Profile({ info }: { info: any }) {
             />
           </div>
           <div className=" flex text-center justify-center items-center">
-            <p className="text-md font-semibold">Virtual Gatekeeper</p>
+            <p className="text-md font-semibold">Virtual Chatbot</p>
           </div>
         </div>
       </div>
