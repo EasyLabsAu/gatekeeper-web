@@ -1,4 +1,4 @@
-import React from "react";
+
 
 // Define the shape of a chat message object using an interface
 interface IChat {

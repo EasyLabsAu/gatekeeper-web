@@ -1,5 +1,5 @@
-import React from "react";
-import { Image } from "@radix-ui/react-avatar";
+// import React from "react";
+// import { Image } from "@radix-ui/react-avatar";
 
 function Profile({ info }: { info: any }) {
   // todo: check if the backend is responding or connected, update the color of backend-status element

@@ -1,6 +1,5 @@
 import Profile from "@/components/chatbox/profile";
 import Input from "@/components/chatbox/input";
-import React from "react";
 import{useState} from 'react'
 import Chats from "@/components/chatbox/chats";
 
@@ -8,7 +7,7 @@ import Chats from "@/components/chatbox/chats";
 // It contains a header (Profile), scrollable chat content, and a fixed input area
 function ChatBox() {
 const [chatHistory, setChatHistory] = useState<any>([]);
-const [profile, setProfile]= useState(); 
+// const [profile, setProfile]= useState(); 
 // include the logic to request information from backend to update the history
 //
   return (
